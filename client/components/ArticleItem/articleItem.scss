@@ -1,0 +1,60 @@
+.article-item {
+  position: relative;
+  padding: 100px 30px 30px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+
+  & h3 {
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 10px;
+    padding-right: 150px;
+  }
+
+  & h4 {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  & .pharagraph {
+    padding: 10px;
+    border: 1px solid #ccc;
+
+    & .original {
+      padding: 10px;
+      background: #e6e6e6;
+    }
+
+    & .to-aprove {
+
+      & p {
+        min-height: 36px;
+        padding: 10px;
+        background: #e6e6e6;
+        width: calc(100% - 150px);
+        float: left;
+      }
+
+      & .message {
+        float: right;
+        margin: 0;
+        font-size: 12px;
+      }
+    }
+  }
+
+  & button.negative {
+    position: absolute;
+    top: 8px;
+    right: 15px;
+  }
+
+  & .article-link {
+    position: absolute !important;
+    top: 25px;
+    left: 13px;
+    margin: 0;
+  }
+
+}
