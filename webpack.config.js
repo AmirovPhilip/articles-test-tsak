@@ -80,7 +80,7 @@ module.exports = {
     output: {
         filename: 'bundle.js',
         path: resolve(BUILD_FOLDER),
-        publicPath: isDevelop ? '/' : './dist/',
+        publicPath: isDevelop ? '/' : '/dist/',
         sourceMapFilename: '[name].js.map',
     },
     devtool: isDevelop ? 'inline-source-map' : false,

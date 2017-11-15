@@ -9,7 +9,7 @@ const app = express();
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }))
-app.use('/fb', express.static(path.join(__dirname, './')))
+app.use('/dist', express.static(path.join(__dirname, '/dist')))
 
 
 app.get('/api/article', articlesController.getArticle)
