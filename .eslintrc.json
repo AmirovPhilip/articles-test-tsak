@@ -1,0 +1,41 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "node": true,
+    "browser": true
+  },
+  "rules": {
+    "semi": [0],
+    "global-require": [0],
+    "indent": [2, 4, {"SwitchCase": 1}],
+    "no-console": [0],
+    "curly": [2, "multi-or-nest", "consistent"],
+    "no-trailing-spaces": [2, { "skipBlankLines": true }],
+    "spaced-comment" : [0],
+    "max-len": [1, {"code": 120 , "tabWidth": 4, "ignoreUrls": true, "ignoreComments": true, "ignoreTrailingComments": true}],
+    "new-cap": [0],
+    "func-names": [0],
+    "no-else-return": [0],
+    "no-unused-vars": [2, {"vars": "all", "args": "none"}],
+    "react/jsx-indent-props": [2, 4],
+    "react/jsx-indent": [2, 4],
+    "react/jsx-filename-extension": [0],
+    "object-shorthand": [1],
+    "react/prefer-stateless-function": [1],
+    "no-bitwise": [1],
+    "no-mixed-operators": [1],
+    "no-plusplus": [1, { "allowForLoopAfterthoughts": true }],
+    "no-underscore-dangle": [2, { "allowAfterThis": true }]
+  },
+  "settings": {
+    "flowtype": {
+      "onlyFilesWithFlowAnnotation": true
+    }
+  }
+}
