@@ -20,16 +20,17 @@ export const add = (data) => {
 export const removeArticle = id => ArticleModel.remove({ _id: ObjectID(id) })
 
 export const approveUserText = (id, status) =>
-    ArticleModel.findOne({ 'pharagraphs.usersText._id': ObjectID(id) })
+     ArticleModel.findOne({ 'pharagraphs.usersText._id': ObjectID(id) })
         .then((article) => {
             let wasUpdated = false
             article.pharagraphs.forEach((pharagraph) => {
-                const userTextToApprove = pharagraph.usersText.filter(userText => userText._id.toString() === id.toString())
-                if (userTextToApprove.length) {
-                    userTextToApprove[0].isApproved = status
-                    wasUpdated = true
-                }
-            })
+                pharagraph.usersText.forEach((userText) => {
+                    if (userText._id.toString() === id.toString()) {
+                        userText.isApproved = status
+                        wasUpdated = true
+                    }
+                })
+        })
             if (wasUpdated)
                 return article.save()
             else

@@ -19,7 +19,7 @@ Back-end:
 + Install packages:
 
     >yarn
-    
+
 + Build project to develop:
 
     >yarn build
