@@ -16,6 +16,10 @@ Back-end:
 
 ### Development commands: ###
 
++ Install packages:
+
+    >yarn
+    
 + Build project to develop:
 
     >yarn build
@@ -28,7 +32,7 @@ Back-end:
 
 + Install packages:
 
-    >yarn install
+    >yarn
 
 + Build project:
 
